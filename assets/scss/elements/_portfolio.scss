@@ -1,6 +1,7 @@
 /*==================
     Portfolio Area 
 ==================*/
+
 .portfolio {
     position: relative;
     @extend %transition;
@@ -48,6 +49,8 @@
             @extend %transition;
         }
     }
+
+    
     .thumbnail{
         position: absolute;
         top: 0;
@@ -58,11 +61,11 @@
         background-position: center;
         border-radius: 5px;
         background-color: #0a0a0a;
-        background-image: url(/assets/images/portfolio/portfolio-1.jpg);
         transform: scale(1.13) translateZ(0);
         backface-visibility: hidden;
         transition: transform .28s ease;
         z-index: 4;
+    
         &.image-1{
             background-image: url(/assets/images/portfolio/portfolio-1.jpg);
         }
@@ -94,6 +97,8 @@
             @extend %transition;
         }
     }
+
+    
 
     .bg-blr-image {
         position: absolute;
@@ -904,7 +909,6 @@ Portfolio Style Three
     }
 }
 
-
 /* Portfolio Style Static */
 .item-portfolio-static {
     margin-top: 60px;
@@ -915,6 +919,7 @@ Portfolio Style Three
         margin-top: 30px;
     }
     .inner {
+        
         padding-top: 20px;
 
         p {
@@ -931,22 +936,64 @@ Portfolio Style Three
             }
         }
     }
-    .thumbnail {
+    .thumbnail { 
+        
         a{
+            
             img {
                 @extend %transition;
-            }
-        }
-    }
-    &:hover {
-        .thumbnail {
-            a{
-                img {
-                    transform: translate3d(0, -10px, 0);
-                    box-shadow: 0 50px 80px -10px rgba(0,0,0,0.17);
-                }
+                
             }
         }
     }
 
+    
+    
+    
+    .button-portfolio{
+        margin: 10px;
+        display: none;
+    }
+      
+
+    &:hover {
+        .thumbnail {
+           
+            a{
+                img {
+                    transform: translate3d(0, -10px, 0);
+                    box-shadow: 0 50px 80px -10px rgba(0,0,0,0.17);
+                    -webkit-filter: blur(2px) brightness(40%);
+                   
+                }
+            }
+
+            .img-overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+              }
+            .img-overlay:before {
+                content: ' ';
+                display: block;
+                
+                /* adjust 'height' to position overlay content vertically */
+                height: 40%;
+              }
+
+              .button-portfolio{
+                display: inline-block;
+            }
+        }
+        
+    }
+
 }
+
+
+
+
+
