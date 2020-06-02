@@ -964,8 +964,8 @@ Portfolio Style Three
                     transform: translate3d(0, -10px, 0);
                     box-shadow: 0 50px 80px -10px rgba(0,0,0,0.17);
                     -webkit-filter: blur(2px) brightness(40%);
-                   
                 }
+                
             }
 
             .img-overlay {
@@ -975,15 +975,19 @@ Portfolio Style Three
                 left: 0;
                 right: 0;
                 text-align: center;
+                @media #{$sm-layout} {
+                    margin-bottom: 100px;
+                }
+                @media #{$md-layout} {
+                    margin-bottom: 100px;
+                }
               }
             .img-overlay:before {
                 content: ' ';
                 display: block;
-                
-                /* adjust 'height' to position overlay content vertically */
                 height: 40%;
               }
-
+        
               .button-portfolio{
                 display: inline-block;
             }
