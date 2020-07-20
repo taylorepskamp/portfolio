@@ -4,7 +4,7 @@ Hello and welcome to my portfolio.
 
 ## About
 
-My name is Taylor Epskamp and I am a frontend developer based in Seattle. 
+My name is Taylor Epskamp and I am a front-end developer based in Seattle. 
 
 ## Stack
 
